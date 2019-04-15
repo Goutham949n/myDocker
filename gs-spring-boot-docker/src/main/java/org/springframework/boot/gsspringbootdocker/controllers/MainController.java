@@ -1,10 +1,12 @@
-package org.springframework.boot.gsspringbootdocker;
+package org.springframework.boot.gsspringbootdocker.controllers;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.gsspringbootdocker.entites.User;
+import org.springframework.boot.gsspringbootdocker.repositories.UserRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +35,7 @@ public class MainController {
 	}
 
 	@GetMapping(value = "/getStudents")
+	@ResponseBody
 	public List<String> getStudents() {
 
 		List<String> students = new ArrayList<String>();

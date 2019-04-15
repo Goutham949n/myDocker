@@ -1,4 +1,4 @@
-package org.springframework.boot.gsspringbootdocker;
+package org.springframework.boot.gsspringbootdocker.entites;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
