@@ -32,7 +32,7 @@ public class MainController {
 		return userRepository.findAll();
 	}
 
-	@RequestMapping(value = "/getStudents")
+	@GetMapping(value = "/getStudents")
 	public List<String> getStudents() {
 
 		List<String> students = new ArrayList<String>();
